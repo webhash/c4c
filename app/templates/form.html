@@ -1,0 +1,43 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<div>
+	
+<form method="POST">
+
+	<label for="french">Search in French??</label>
+	<input type="checkbox" id="french" name="french"/>
+	<br><br>
+	
+	<label for="cats">Choose a catagory</label>
+	<select name="cats" id="cats">
+	  <option value="all">All</option>
+	  <option value="food">Food</option>
+	  <option value="vehicle">Vehicles</option>
+	  <option value="health">Health Products</option>
+	  <option value="cps">Consumer Products</option>
+	</select>
+	<br><br>
+	
+	<label for="rcount">Number of results</label>
+	<input type="number" id="rcount" name="rcount" min="0">
+	<br><br>
+	
+	<label for="scount">Number of results to skip</label>
+	<input type="number" id="scount" name="scount" min="0">
+	<br><br>
+	
+	<label for="text">Enter search keyword</label>
+    <input name="text" id="text">
+	<br><br>
+	
+    <input type="submit">
+	<br><br>
+	
+</form>
+
+</div>
+
+{% endblock %}

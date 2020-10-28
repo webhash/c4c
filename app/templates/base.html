@@ -1,0 +1,16 @@
+<html>
+
+    <head>
+      {% if title %}
+      <title>{{ title }} - C4C</title>
+      {% else %}
+      <title>Welcome to C4C</title>
+      {% endif %}
+	  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+        <div>C4C: <a href="/recent">Recent</a> <a href="/">Home</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>

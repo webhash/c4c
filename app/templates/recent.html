@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Recent!</h1>
+	<h2>ALL</h2>
+	<table  style="overflow-x:auto;float:right">
+	<tr>
+		<th>recallId </th>
+		<th>title </th>
+		<th>category </th>
+		<th>url </th>
+	</tr>
+	
+    {% for post in all %}
+    <tr>
+		
+		<td>{{ post.recallId }}</td>
+		<td>{{ post.title }}</td>
+		<td>{{ post.category  }}</td>
+		<td><a href={{ post.url  }}>{{ post.url  }} </a> </td>
+		
+	</tr>
+	{% endfor %}
+	</table>
+   
+
+	<h2>CPS</h2>
+	<table  style="overflow-x:auto;float:right">
+	<tr>
+		<th>recallId </th>
+		<th>title </th>
+		<th>category </th>
+		<th>url </th>
+	</tr>
+	
+    {% for post in cps %}
+    <tr>
+		
+		<td>{{ post.recallId }}</td>
+		<td>{{ post.title }}</td>
+		<td>{{ post.category  }}</td>
+		<td><a href={{ post.url  }}>{{ post.url  }} </a> </td>
+		
+	</tr>
+	{% endfor %}
+	</table>
+
+
+	<h2>FOOD</h2>
+	<table  style="overflow-x:auto;float:right">
+	<tr>
+		<th>recallId </th>
+		<th>title </th>
+		<th>category </th>
+		<th>url </th>
+	</tr>
+	
+    {% for post in food %}
+    <tr>
+		
+		<td>{{ post.recallId }}</td>
+		<td>{{ post.title }}</td>
+		<td>{{ post.category  }}</td>
+		<td><a href={{ post.url  }}>{{ post.url  }} </a> </td>
+		
+	</tr>
+	{% endfor %}
+	</table>
+
+
+	<h2>VEHICLE</h2>
+	<table  style="overflow-x:auto;float:right">
+	<tr>
+		<th>recallId </th>
+		<th>title </th>
+		<th>category </th>
+		<th>url </th>
+	</tr>
+	
+    {% for post in vehicle %}
+    <tr>
+		
+		<td>{{ post.recallId }}</td>
+		<td>{{ post.title }}</td>
+		<td>{{ post.category  }}</td>
+		<<td><a href={{ post.url  }}>{{ post.url  }} </a> </td>
+		
+	</tr>
+	{% endfor %}
+	</table>
+	
+
+	<h2>HEALTH</h2>
+	<table  style="overflow-x:auto;float:right">
+	<tr>
+		<th>recallId </th>
+		<th>title </th>
+		<th>category </th>
+		<th>url </th>
+	</tr>
+	
+    {% for post in health %}
+    <tr>
+		
+		<td>{{ post.recallId }}</td>
+		<td>{{ post.title }}</td>
+		<td>{{ post.category  }}</td>
+		<td><a href={{ post.url  }}>{{ post.url  }} </a> </td>
+		
+	</tr>
+	{% endfor %}
+	</table>
+
+	
+{% endblock %}
